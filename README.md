@@ -6,7 +6,7 @@ El objetivo de este proyecto es presentar mi perfil profesional de forma moderna
 
 ## 🌐 Sitio en línea
 
-Podés ver mi CV en el siguiente enlace:
+Puedes ver mi CV en el siguiente enlace:
 
 👉 [https://cv-nico.netlify.app](https://cv-nico.netlify.app)
 
@@ -15,11 +15,10 @@ Podés ver mi CV en el siguiente enlace:
 - React
 - Vite
 - Netlify (para el despliegue)
-- Supabase (para almacenar los formularios de contacto)
 
 ## 📦 Instalación local
 
-Si querés clonar este proyecto y probarlo localmente:
+Si quieres clonar este proyecto y probarlo localmente:
 
 ```bash
 git clone https://github.com/nicomesa230/cv-nico.git
