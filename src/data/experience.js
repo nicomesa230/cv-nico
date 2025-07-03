@@ -1,6 +1,6 @@
 const experience = [
   {
-    position: "Desarrollador Software",
+    position: "Desarrollador web fullstack",
     company: "Eco-Clic printing & hardware solutions",
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM_8MdO57U92vO4nSyl37fRIqRBzstmwIJOg&s",
     period: "nov. 2024 - actualmente",
@@ -42,7 +42,7 @@ const experience = [
             },
             {
               name: "PostgreSQL",
-              logo: "https://e7.pngegg.com/pngimages/738/738/png-clipart-postgresql-database-logo-application-software-computer-software-mysql-logo-blue-text.png"
+              logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png"
             },
             {
               name: "Git",

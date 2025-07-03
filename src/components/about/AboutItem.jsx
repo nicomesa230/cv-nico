@@ -2,28 +2,28 @@ import React from 'react'
 
 export const AboutItem = ({ skills, aboutSkills, softSkills, languages, interests }) => {
   return (
-    <div>
+    <div style={{ display: 'flex', flexWrap: 'wrap', gap: 24, justifyContent: 'center', width: '100%' }}>
       <aside>
         <h1>Habilidades</h1>
-        {skills.map((skill) => (
-          <img
-            key={skill.name}
-            src={skill.icon}
-            alt={skill.name}
-            title={skill.name}
-          />
-        ))}
+        <div className="skills-list">
+          {skills.map((skill) => (
+            <span className="skill-item" key={skill.name}>
+              <img src={skill.icon} alt={skill.name} title={skill.name} />
+              {skill.name}
+            </span>
+          ))}
+        </div>
       </aside>
       <aside>
         <h1>Conocimientos</h1>
-        {aboutSkills.map((aboutsk) => (
-          <img
-            key={aboutsk.name}
-            src={aboutsk.icon}
-            alt={aboutsk.name}
-            title={aboutsk.name}
-          />
-        ))}
+        <div className="knowledge-list">
+          {aboutSkills.map((aboutsk) => (
+            <span className="knowledge-item" key={aboutsk.name}>
+              <img src={aboutsk.icon} alt={aboutsk.name} title={aboutsk.name} />
+              {aboutsk.name}
+            </span>
+          ))}
+        </div>
       </aside>
       <aside>
         <h1>Habilidades blandas</h1>
@@ -35,14 +35,13 @@ export const AboutItem = ({ skills, aboutSkills, softSkills, languages, interest
       </aside>
       <aside>
         <h1>Idiomas</h1>
-        <ul>
+        <ul className="lang-list">
           {languages.map((idioma, idx) => (
             <li key={idx}>
               <img
                 src={idioma.icon}
                 alt={idioma.name}
                 title={idioma.name}
-                style={{ width: 24, height: 16, verticalAlign: 'middle', marginRight: 8 }}
               />
               {idioma.name} - {idioma.level}
             </li>

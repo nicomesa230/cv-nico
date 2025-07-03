@@ -1,13 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { Header } from '../components/layout/Header'
 import { ExperienceList } from '../components/experience/ExperienceList'
+import { Footer } from '../components/layout/Footer'
 
 export const Experience = () => {
+
+  const [search, setSearch]= useState('')
+
   return (
     <>
-    <div>
+    <Header onSearch={setSearch}/>
+    <div className='experience'>
         <h1>Mi Experiencia</h1>
-        <ExperienceList />
+        <ExperienceList search={search}/>
     </div>
+    <Footer/>
     </>
   )
 }

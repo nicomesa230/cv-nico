@@ -1,42 +1,29 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import apps from '../../data/app'
+import '../../styles/container.css'
 
-export const Container = () => {
-  const [search, setSearch] = useState('')
+export const Container = ({ search }) => {
   const navigate = useNavigate()
-  
-  const [searchValue, setSearchValue] = useState('')
 
+  //Filtramos información con buscador interactivo
   const filteredApps = apps.filter(app =>
-    app.label.toLowerCase().includes(search.toLowerCase())
+    app.label.toLowerCase().includes((search || '').toLowerCase())
   )
 
-  const handleSearch = (e) => {
-    e.preventDefault()
-    setSearch(searchValue)
-  }
-
+  //Inicializamos array, useState & useEffect para devolver estos 2 textos cada 3 segundos al renderizar el componente
+  const texts = ['Nico Mesa, Desarrollador web', 'Bienvenido a mi CV']
+  const [current, setCurrent] = useState(0)
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent(prev => (prev + 1) % texts.length)
+    }, 3000)
+    return () => clearInterval(interval)
+  }, [])
   return (
     <>
       <div className='container'>
-        <div className='search'>
-          <form onSubmit={handleSearch} style={{ display: 'flex', alignItems: 'center' }}>
-            <input
-              type="text"
-              placeholder="Buscar sección..."
-              value={searchValue}
-              onChange={e => setSearchValue(e.target.value)}
-            />
-            <button type="submit" aria-label="Buscar" style={{ background: 'none', border: 'none', cursor: 'pointer' }}>
-              <img
-                src="https://cdn.iconscout.com/icon/premium/png-256-thumb/search-icon-download-in-svg-png-gif-file-formats--find-zoom-large-small-editor-user-interface-vol-3-pack-icons-19652.png?f=webp&w=128"
-                alt="Buscar"
-                style={{ width: 15, height: 15, objectFit: 'contain' }}
-              />
-            </button>
-          </form>
-        </div>
+        <h1 className="fade-text">{texts[current]}</h1>
         <div className='icon'>
           {filteredApps.map(app => (
             <button

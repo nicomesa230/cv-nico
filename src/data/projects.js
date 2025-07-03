@@ -26,7 +26,7 @@ const projects = [
         },
         {
           name: "PostgreSQL",
-          logo: "https://e7.pngegg.com/pngimages/738/738/png-clipart-postgresql-database-logo-application-software-computer-software-mysql-logo-blue-text.png"
+          logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png"
         },
         {
           name: "Git",
@@ -63,7 +63,7 @@ const projects = [
           },
           {
               name: "PostgreSQL",
-              logo: "https://e7.pngegg.com/pngimages/738/738/png-clipart-postgresql-database-logo-application-software-computer-software-mysql-logo-blue-text.png"
+              logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png"
           },
           {
             name: "Git",
@@ -100,7 +100,7 @@ const projects = [
         },
         {
             name: "PostgreSQL",
-            logo: "https://e7.pngegg.com/pngimages/738/738/png-clipart-postgresql-database-logo-application-software-computer-software-mysql-logo-blue-text.png"
+            logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png"
         },
         {
           name: "Git",
@@ -136,7 +136,7 @@ const projects = [
           },
           {
               name: "PostgreSQL",
-              logo: "https://e7.pngegg.com/pngimages/738/738/png-clipart-postgresql-database-logo-application-software-computer-software-mysql-logo-blue-text.png"
+              logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png"
           },
           {
             name: "Git",
@@ -172,7 +172,7 @@ const projects = [
         },
         {
           name: "PostgreSQL",
-          logo: "https://e7.pngegg.com/pngimages/738/738/png-clipart-postgresql-database-logo-application-software-computer-software-mysql-logo-blue-text.png"
+          logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png"
         },
         {
           name: "Git",
@@ -208,7 +208,7 @@ const projects = [
         },
         {
           name: "PostgreSQL",
-          logo: "https://e7.pngegg.com/pngimages/738/738/png-clipart-postgresql-database-logo-application-software-computer-software-mysql-logo-blue-text.png"
+          logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png"
         },
         {
           name: "Git",
@@ -216,6 +216,27 @@ const projects = [
         }
       ],
     link: "https://odoo.eco-clic.net/"
+
+  },
+      {
+    title: "Alim Publicidad - Wordpress",
+    img: "https://alimpublicidad.net/wp-content/uploads/2023/09/cropped-fav.jpg",
+    description: "Página web para Alim Publicidad (empresa de merchandising) de forma freelance, es una web estática, no se pueden realizar pagos pero si pedidos",
+    stack: [
+        {
+          name: "Wordpress",
+          logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVhNUS5emquOnd63nSxHHhN3Ow_16X_rdokA&s"
+        },
+        {
+          name: "PHP",
+          logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/711px-PHP-logo.svg.png"
+        },
+        {
+          name: "MySQL",
+          logo: "https://www.logo.wine/a/logo/MySQL/MySQL-Logo.wine.svg"
+        },
+      ],
+    link: "https://alimpublicidad.net/"
 
   },
 ];

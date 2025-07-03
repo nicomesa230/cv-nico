@@ -9,8 +9,8 @@ export const ExperienceItem = ({ position, company, img, period, description, st
         <img src={img} alt={company} />
         <p>{period}</p>
         <div>
-          {description.map((desc) => (
-            <p>{desc}</p>
+          {description.map((desc, idx) => (
+            <p key={idx}>{desc}</p>
           ))}
         </div>
         <div>

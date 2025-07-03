@@ -8,6 +8,7 @@ import { Experience } from './pages/Experience'
 import { Projects } from './pages/Projects'
 
 function App() {
+  //Colocamos las rutas a los componentes que queramos acceder
   return (
     <BrowserRouter>
       <Routes>

@@ -66,7 +66,7 @@ const about = [
     { 
       name: "Inglés", 
       level: "Intermedio",
-      icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Flag_of_England.svg/1280px-Flag_of_England.svg.png", 
+      icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/1200px-Flag_of_the_United_Kingdom_%283-5%29.svg.png", 
     }
   ],
   interests: [

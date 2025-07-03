@@ -1,0 +1,81 @@
+footer {
+  background: #7b6cb0;
+  color: #fff;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  padding: 30px;
+  box-sizing: border-box;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.04);
+}
+
+footer a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+footer img[alt="Github"],
+footer img[alt="LinkedIn"] {
+  width: 28px;
+  height: 28px;
+  margin: 0 8px;
+  filter: brightness(0) invert(1);
+}
+
+footer a:hover img {
+  filter: none;
+  background-color: #a084e8;
+  transition: background-color 0.2s, box-shadow 0.2s;
+  border-radius: 50%;
+  box-shadow: 0 2px 12px rgba(160, 132, 232, 0.4);
+}
+
+/* Estilos responsive */
+@media (max-width: 900px) {
+  footer {
+    padding: 0 12px;
+    font-size: 14px;
+    gap: 12px;
+  }
+  footer img[alt="Github"],
+  footer img[alt="LinkedIn"] {
+    width: 24px;
+    height: 24px;
+    margin: 0 5px;
+  }
+}
+
+@media (max-width: 600px) {
+  footer {
+    flex-direction: column;
+    height: auto;
+    padding: 8px 4px;
+    gap: 6px;
+    font-size: 13px;
+  }
+  footer img[alt="Github"],
+  footer img[alt="LinkedIn"] {
+    width: 22px;
+    height: 22px;
+    margin: 0 4px;
+  }
+}
+
+@media (max-width: 400px) {
+  footer {
+    padding: 4px 2px;
+    gap: 4px;
+    font-size: 11px;
+  }
+  footer img[alt="Github"],
+  footer img[alt="LinkedIn"] {
+    width: 18px;
+    height: 18px;
+    margin: 0 2px;
+  }
+}
