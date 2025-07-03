@@ -5,14 +5,12 @@ import { Footer } from '../components/layout/Footer'
 
 export const Experience = () => {
 
-  const [search, setSearch]= useState('')
-
   return (
     <>
-    <Header onSearch={setSearch}/>
+    <Header />
     <div className='experience'>
         <h1>Mi Experiencia</h1>
-        <ExperienceList search={search}/>
+        <ExperienceList/>
     </div>
     <Footer/>
     </>

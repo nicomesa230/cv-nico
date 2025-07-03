@@ -4,17 +4,10 @@ import { Container } from '../components/layout/Container'
 import { Footer } from '../components/layout/Footer'
 
 export const Home = () => {
-  const [search, setSearch] = useState('')
-
-  
-  const handleSearch = (value) => {
-    setSearch(value)
-  }
-
   return (
     <>
-    <Header onSearch={handleSearch}/>
-    <Container search={search}/>
+    <Header/>
+    <Container/>
     <Footer/>
     </>
   )

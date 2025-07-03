@@ -5,11 +5,10 @@ import { Footer } from '../components/layout/Footer'
 
 export const Projects = () => {
 
-  const [search, setSearch] = useState('')
 
   return (
     <>
-    <Header onSearch={setSearch}/>
+    <Header/>
     <div className='projects'>
       <h1>Mis Proyectos</h1>
       <ProjectList />

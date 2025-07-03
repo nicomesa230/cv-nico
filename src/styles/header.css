@@ -7,49 +7,20 @@ header {
   padding: 30px;
   box-sizing: border-box;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  flex-direction: row; 
+  gap: 0;
 }
 
-header > div,
-header > form {
+header > div {
   display: flex;
   align-items: center;
 }
 
 header img[alt="App grid selector"] {
-  width: 28px;
-  height: 28px;
-  margin-right: 24px;
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
   color: #fff;
-  filter: brightness(0) invert(1);
-}
-
-header form {
-  flex: 1;
-  max-width: 400px;
-  margin: 0 24px;
-}
-
-header input[type="text"] {
-  width: 220px;
-  padding: 8px 12px;
-  border-radius: 6px;
-  border: none;
-  font-size: 15px;
-  outline: none;
-}
-
-header button[type="submit"] {
-  margin-left: 8px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  color: #fff;
-}
-
-header img[alt="Buscar"] {
-  width: 18px;
-  height: 18px;
   filter: brightness(0) invert(1);
 }
 
@@ -60,8 +31,9 @@ header > div:last-child {
 }
 
 header img[alt="Icono"] {
-  width: 28px;
-  height: 28px;
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
   border-radius: 50%;
   background: #fff;
   margin-right: 8px;
@@ -71,94 +43,62 @@ header p {
   color: #fff;
   font-weight: bold;
   margin: 0;
-  font-size: 16px;
+  font-size: 24px;
 }
 
 /* Estilos responsive */
 @media (max-width: 900px) {
   header {
-    padding: 0 12px;
-  }
-  header form {
-    max-width: 220px;
-    margin: 0 8px;
-  }
-  header input[type="text"] {
-    width: 120px;
-    font-size: 14px;
-    padding: 6px 8px;
+    padding: 0 8px;
+    gap: 4px;
   }
   header img[alt="App grid selector"] {
-    margin-right: 10px;
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
   }
   header img[alt="Icono"] {
-    width: 24px;
-    height: 24px;
-    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    margin-right: 4px;
   }
   header p {
-    font-size: 14px;
+    font-size: 20px;
   }
 }
 
 @media (max-width: 600px) {
   header {
-    flex-direction: column;
-    height: auto;
-    padding: 8px 4px;
-    gap: 6px;
-  }
-  header > div,
-  header > form {
-    margin: 0;
-    flex: none;
-    width: 100%;
-    justify-content: flex-start;
-  }
-  header form {
-    max-width: 100%;
-    width: 100%;
-    margin: 0 0 6px 0;
-  }
-  header input[type="text"] {
-    width: 100%;
-    min-width: 0;
-    font-size: 13px;
-    padding: 6px 6px;
+    padding: 4px 2px;
+    gap: 2px;
   }
   header img[alt="App grid selector"] {
-    margin-right: 8px;
-    width: 22px;
-    height: 22px;
+    margin-right: 4px;
+    width: 30px;
+    height: 30px;
   }
   header img[alt="Icono"] {
-    width: 22px;
-    height: 22px;
-    margin-right: 4px;
+    width: 30px;
+    height: 30px;
+    margin-right: 2px;
   }
   header p {
-    font-size: 13px;
+    font-size: 11px;
+    display: none; 
   }
 }
 
 @media (max-width: 400px) {
   header {
-    padding: 4px 2px;
-    gap: 4px;
-  }
-  header input[type="text"] {
-    font-size: 12px;
-    padding: 4px 4px;
+    padding: 2px 1px;
+    gap: 1px;
   }
   header img[alt="App grid selector"],
   header img[alt="Icono"] {
-    width: 18px;
-    height: 18px;
-    margin-right: 2px;
+    width: 22px;
+    height: 22px;
   }
   header p {
-    font-size: 11px;
+    font-size: 9px;
+    display: none;
   }
 }

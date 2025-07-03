@@ -3,17 +3,12 @@ import { useNavigate } from 'react-router-dom'
 import apps from '../../data/app'
 import '../../styles/container.css'
 
-export const Container = ({ search }) => {
-  const navigate = useNavigate()
-
-  //Filtramos información con buscador interactivo
-  const filteredApps = apps.filter(app =>
-    app.label.toLowerCase().includes((search || '').toLowerCase())
-  )
+export const Container = () => {
 
   //Inicializamos array, useState & useEffect para devolver estos 2 textos cada 3 segundos al renderizar el componente
   const texts = ['Nico Mesa, Desarrollador web', 'Bienvenido a mi CV']
   const [current, setCurrent] = useState(0)
+  const navigate = useNavigate()
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent(prev => (prev + 1) % texts.length)
@@ -25,7 +20,7 @@ export const Container = ({ search }) => {
       <div className='container'>
         <h1 className="fade-text">{texts[current]}</h1>
         <div className='icon'>
-          {filteredApps.map(app => (
+          {apps.map(app => (
             <button
               key={app.label}
               onClick={() => navigate(app.path)}

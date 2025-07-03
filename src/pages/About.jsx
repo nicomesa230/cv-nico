@@ -5,13 +5,13 @@ import { Footer } from '../components/layout/Footer'
 import '../styles/about.css'
 
 export const About = () => {
-  const [search, setSearch]= useState('')
+
   return (
     <>
-    <Header onSearch={setSearch}/>
+    <Header/>
     <div className='about'>
         <h1>Sobre mi</h1>
-        <AboutList search={search}/>
+        <AboutList/>
     </div>
     <Footer/>
     </>

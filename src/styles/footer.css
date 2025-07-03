@@ -11,6 +11,7 @@ footer {
   font-weight: bold;
   font-size: 16px;
   box-shadow: 0 -2px 8px rgba(0,0,0,0.04);
+  flex-direction: row; 
 }
 
 footer a {
@@ -20,7 +21,8 @@ footer a {
 }
 
 footer img[alt="Github"],
-footer img[alt="LinkedIn"] {
+footer img[alt="LinkedIn"],
+footer img[alt="cv"] {
   width: 28px;
   height: 28px;
   margin: 0 8px;
@@ -43,7 +45,8 @@ footer a:hover img {
     gap: 12px;
   }
   footer img[alt="Github"],
-  footer img[alt="LinkedIn"] {
+  footer img[alt="LinkedIn"],
+  footer img[alt="cv"] {
     width: 24px;
     height: 24px;
     margin: 0 5px;
@@ -52,17 +55,17 @@ footer a:hover img {
 
 @media (max-width: 600px) {
   footer {
-    flex-direction: column;
-    height: auto;
     padding: 8px 4px;
-    gap: 6px;
     font-size: 13px;
+    gap: 6px;
+    height: 38px;
   }
   footer img[alt="Github"],
-  footer img[alt="LinkedIn"] {
-    width: 22px;
-    height: 22px;
-    margin: 0 4px;
+  footer img[alt="LinkedIn"],
+  footer img[alt="cv"] {
+    width: 18px;
+    height: 18px;
+    margin: 0 2px;
   }
 }
 
@@ -71,11 +74,13 @@ footer a:hover img {
     padding: 4px 2px;
     gap: 4px;
     font-size: 11px;
+    height: 28px;
   }
   footer img[alt="Github"],
-  footer img[alt="LinkedIn"] {
-    width: 18px;
-    height: 18px;
-    margin: 0 2px;
+  footer img[alt="LinkedIn"],
+  footer img[alt="cv"] {
+    width: 14px;
+    height: 14px;
+    margin: 0 1px;
   }
 }

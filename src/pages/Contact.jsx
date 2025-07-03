@@ -2,15 +2,15 @@ import React, { useState } from 'react'
 import { Header } from '../components/layout/Header'
 import { ContactList } from '../components/contact/ContactList'
 import { Footer } from '../components/layout/Footer'
+import '../styles/contact.css'
 
 export const Contact = () => {
-  const [search, setSearch]= useState('')
   return (
     <>
-    <Header onSearch={setSearch}/>
+    <Header />
       <div className='contact'>
         <h1>Contáctame</h1>
-        <ContactList search={search}/>
+        <ContactList />
       </div>
     <Footer/>
     </>

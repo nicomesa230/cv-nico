@@ -110,18 +110,19 @@
     gap: 8px;
   }
   .icon button {
-    height: 120px;
-    padding: 4px 2px 2px 2px;
+    height: 140px; 
+    padding: 8px 4px 4px 4px;
   }
   .icon button img {
-    max-width: 50px;
-    max-height: 50px;
+    max-width: 70px; 
+    max-height: 70px;
   }
   .icon button span {
-    font-size: 0.9rem;
+    font-size: 1rem;
     padding-left: 2px;
   }
 }
+
 @media (max-width: 400px) {
   .container {
     padding: 4px 0;
@@ -137,17 +138,17 @@
     gap: 4px;
   }
   .icon button {
-    height: 80px;
-    padding: 2px 1px 1px 1px;
-    border-radius: 10px;
+    height: 100px; 
+    padding: 4px 2px 2px 2px;
+    border-radius: 12px;
   }
   .icon button img {
-    max-width: 32px;
-    max-height: 32px;
-    margin-bottom: 6px;
+    max-width: 48px; 
+    max-height: 48px;
+    margin-bottom: 8px;
   }
   .icon button span {
-    font-size: 0.7rem;
+    font-size: 0.85rem;
     margin-bottom: 4px;
     padding-left: 0;
   }
