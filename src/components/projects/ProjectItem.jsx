@@ -3,7 +3,7 @@ import React from 'react'
 export const ProjectItem = ({ title, img, description, stack, link }) => {
   return (
     <>
-    <div>
+    <div className="project-item">
       <h2>{title}</h2>
       <img src={img} />
       <p>{description}</p>
@@ -24,7 +24,7 @@ export const ProjectItem = ({ title, img, description, stack, link }) => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        Ver Proyecto
+        Ver proyecto
       </a>
     </div>
     </>

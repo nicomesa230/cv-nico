@@ -2,6 +2,7 @@ header {
   background: #7b6cb0;
   height: 48px;
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
   padding: 30px;
@@ -94,8 +95,8 @@ header p {
   }
   header img[alt="App grid selector"],
   header img[alt="Icono"] {
-    width: 22px;
-    height: 22px;
+    width: 25px;
+    height: 25px;
   }
   header p {
     font-size: 9px;

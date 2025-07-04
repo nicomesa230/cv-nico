@@ -1,14 +1,12 @@
 import React from 'react'
 
-export const ContactItem = ({ name, title, phone, email, github, linkedin, location, interestsLinks }) => {
+export const ContactItem = ({ name, title, phone, email, location, interestsLinks }) => {
   return (
     <div className="contact-item">
       <h1>{name}</h1>
       <h2>{title}</h2>
       <p>Teléfono: {phone}</p>
       <p>Email: <a href={`mailto:${email}`}>{email}</a></p>
-      <p>GitHub: <a href={github} target="_blank" rel="noopener noreferrer">{github}</a></p>
-      <p>LinkedIn: <a href={linkedin} target="_blank" rel="noopener noreferrer">{linkedin}</a></p>
       <p>Ubicación: {location}</p>
       <div className="links">
         {interestsLinks && interestsLinks.map(link => (

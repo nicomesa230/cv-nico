@@ -4,8 +4,6 @@ const contact = [
   title: "Desarrollador web",
   phone: "+34 645 48 12 64",
   email: "nicomesa230@gmail.com",
-  github: "https://github.com/nicomesa230",
-  linkedin: "https://www.linkedin.com/in/nicolas-mesa-munoz",
   location: "Barcelona, España",
   interestsLinks: [
     {

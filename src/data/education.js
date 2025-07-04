@@ -5,8 +5,9 @@ const education = [
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh_6pMDlvEHpHDXVPdncg0oMjsFFQxEGuHmg&s",
     period: "2026 - En curso",
     description: [
-      "Estudios previstos para profundizar en algoritmia, estructuras de datos, arquitectura de sistemas y desarrollo avanzado",
-      "Formación online compatible con actividad profesional"
+      "Algoritmia y estructuras de datos",
+      "Arquitectura de sistemas y desarrollo avanzado",
+      "Compatible con carrera profesional"
     ]
   },
   {

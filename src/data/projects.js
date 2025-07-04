@@ -1,7 +1,7 @@
 const projects = [
   {
     title: "VeriFactu - Odoo",
-    img: "https://play-lh.googleusercontent.com/5OCkL8cGL7q5YCTCTlP_VcE0hHgokPrSTsWX8VcmeUZ7-eFBv6NJCLx-X--85w-LdQ",
+    img: "/assets/aeat.png",
     description: "Módulo para cumplimiento de la normativa fiscal española que permite el envío automático y en vivo de facturas a la AEAT desde Odoo. Incluye firma electrónica, huellas SHA-256, generación de QR en las facturas para mayor transparencia y autenticidad.",
     stack: [
         {
@@ -38,7 +38,7 @@ const projects = [
 
   {
     title: "Aesrent - Odoo",
-    img: "https://aesrent.es/wp-content/uploads/2022/11/cropped-A-aes-rent.386x386_png.png",
+    img: "/assets/aesrent.png",
     description: "Participación en el desarrollo de flujos de trabajo internos de una empresa de alquileres de andamios incluyendo visitas comerciales, visitas técnicas, gestión de obras, gestión de andamios, automatizaciones de notificaciones via email y whatsapp, órdenes de trabajo, y hojas de trabajo.",
     stack: [
           {
@@ -75,7 +75,7 @@ const projects = [
 
   {
     title: "Eboss Agencia - Odoo",
-    img: "https://eboss-agencia.com/wp-content/uploads/2020/11/Eboss-Agencia-Logo.png",
+    img: "/assets/eboss.png",
     description: "Participación en el desarrollo frontend y lógica de negocio para una agencia inmobiliaria incluyendo gestión de propiedades, contratos, clientes y automatización de procesos de ventas.",
     stack: [
         {
@@ -111,7 +111,7 @@ const projects = [
   },
   {
     title: "Mongráfic - Odoo",
-    img: "https://mongraficsl.com/wp-content/uploads/logo-mongrafic-01.png",
+    img: "/assets/mongrafic.png",
     description: "Participación en el desarrollo de un sistema de ventas (presupuesto, albarán, factura), seguimiento de pedidos y gestión de logística para una empresa de serigrafía y cortes láser",
     stack: [
           {
@@ -147,7 +147,7 @@ const projects = [
   },
   {
     title: "Psicomaquia - Odoo",
-    img: "https://psicomaquia.com/web/image/website/1/logo/My%20Website?unique=0ecabd1",
+    img: "/assets/psicomaquia.png",
     description: "Participación en el desarrollo ecommerce de un autónomo dedicado a la fotografía, incluyendo pedidos, gestión de inventario,pasarela de pago Stripe y ciclo de ventas.",
     stack:[
         {
@@ -183,7 +183,7 @@ const projects = [
   },
     {
     title: "Eco Clic - Odoo",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM_8MdO57U92vO4nSyl37fRIqRBzstmwIJOg&s",
+    img: "/assets/ecoclic.png",
     description: "Participación en el desarrollo frontend de mi actual empresa (Eco Clic), incluyendo módulos como Verifactu, subida de blogs y diseño de esta",
     stack: [
         {
@@ -220,7 +220,7 @@ const projects = [
   },
       {
     title: "Alim Publicidad - Wordpress",
-    img: "https://alimpublicidad.net/wp-content/uploads/2023/09/cropped-fav.jpg",
+    img: "/assets/alim.png",
     description: "Página web para Alim Publicidad (empresa de merchandising) de forma freelance, es una web estática, no se pueden realizar pagos pero si pedidos",
     stack: [
         {

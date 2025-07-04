@@ -1,0 +1,220 @@
+.projects {
+  width: 100%;
+  min-height: calc(100% - 48px - 48px);
+  background: #7b6cb0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 0 32px 0;
+  box-sizing: border-box;
+}
+
+.projects > h1 {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 36px;
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px #a084e8aa;
+}
+
+.projects section {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  gap: 28px;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.projects .project-item {
+  background: linear-gradient(135deg, #fff 85%, #e5e0fa 100%);
+  border-radius: 22px;
+  box-shadow: 0 8px 32px rgba(123, 108, 176, 0.18);
+  padding: 32px 28px 24px 28px;
+  width: 350px;
+  min-width: 350px;
+  max-width: 350px;
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  transition: box-shadow 0.2s, transform 0.2s, border 0.2s;
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.projects .project-item:hover {
+  transform: translateY(-8px) scale(1.025);
+  cursor: pointer;
+}
+
+.projects .project-item h2 {
+  color: #7b6cb0;
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.projects .project-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  background: #f6f6f6;
+  box-shadow: 0 2px 8px #e5e0fa33;
+  align-self: center;
+}
+
+.projects .project-item p {
+  color: #7b6cb0;
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+  line-height: 1.7;
+  word-break: break-word;
+}
+
+.projects .project-item > div {
+  margin-top: 8px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.projects .project-item > div img {
+  width: 28px;
+  height: 28px;
+  margin-bottom: 0;
+  border-radius: 6px;
+  background: #f6f6f6;
+  box-shadow: 0 1px 4px #a084e822;
+}
+
+.projects .project-item a {
+  color: #fff;
+  background: #a084e8;
+  font-size: 1.05rem;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-top: 12px;
+  align-self: flex-end;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 2px 8px #e5e0fa33;
+}
+.projects .project-item a:hover {
+  background: #7b6cb0;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .projects section {
+    gap: 18px;
+  }
+  .projects .project-item {
+    width: 300px;
+    min-width: 300px;
+    max-width: 300px;
+    height: 440px;
+    padding: 20px 14px 14px 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .projects {
+    padding: 16px 4px;
+  }
+  .projects > h1 {
+    font-size: 1.3rem;
+    margin-bottom: 18px;
+  }
+  .projects section {
+    max-width: 90vw;
+    gap: 12px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .projects .project-item {
+    width: 86vw;
+    min-width: 86vw;
+    max-width: 86vw;
+    height: auto;
+    padding: 12px 4vw 8px 4vw;
+    border-radius: 14px;
+  }
+  .projects .project-item h2 {
+    font-size: 1.05rem;
+  }
+  .projects .project-item img {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 8px;
+  }
+  .projects .project-item p {
+    font-size: 0.92rem;
+    margin-bottom: 6px;
+  }
+  .projects .project-item > div img {
+    width: 22px;
+    height: 22px;
+  }
+  .projects .project-item a {
+    font-size: 0.95rem;
+    padding: 6px 12px;
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 400px) {
+  .projects {
+    padding: 8px 2px;
+  }
+  .projects > h1 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  .projects section {
+    max-width: 90vw;
+    gap: 8px;
+  }
+  .projects .project-item {
+    width: 84vw;
+    min-width: 84vw;
+    max-width: 84vw;
+    padding: 8px 2vw 6px 2vw;
+    border-radius: 8px;
+  }
+  .projects .project-item h2 {
+    font-size: 0.92rem;
+    margin-bottom: 6px;
+  }
+  .projects .project-item img {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 6px;
+  }
+  .projects .project-item p {
+    font-size: 0.82rem;
+    margin-bottom: 4px;
+  }
+  .projects .project-item > div img {
+    width: 16px;
+    height: 16px;
+  }
+  .projects .project-item a {
+    font-size: 0.85rem;
+    padding: 4px 8px;
+    margin-top: 6px;
+  }
+}

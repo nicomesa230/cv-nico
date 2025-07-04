@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Header } from '../components/layout/Header'
 import { ExperienceList } from '../components/experience/ExperienceList'
 import { Footer } from '../components/layout/Footer'
+import '../styles/experience.css'
 
 export const Experience = () => {
 

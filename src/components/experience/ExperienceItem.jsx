@@ -3,7 +3,7 @@ import React from 'react'
 export const ExperienceItem = ({ position, company, img, period, description, stack }) => {
   return (
     <>
-      <div>
+      <div className="experience-item">
         <h1>{position}</h1>
         <h2>{company}</h2>
         <img src={img} alt={company} />

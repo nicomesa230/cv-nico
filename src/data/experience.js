@@ -1,6 +1,6 @@
 const experience = [
   {
-    position: "Desarrollador web fullstack",
+    position: "Desarrollador web fullstack jr",
     company: "Eco-Clic printing & hardware solutions",
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM_8MdO57U92vO4nSyl37fRIqRBzstmwIJOg&s",
     period: "nov. 2024 - actualmente",
@@ -8,8 +8,6 @@ const experience = [
       "Desarrollo Full-Stack implementando Python & XML utilizando ERP Odoo",
       "Documentación técnica de los entornos desarrollados para que sean escalables",
       "Despliegue de datos en PostgresSQL",
-      "Despliegue de software en entornos Windows & Linux",
-      "Desarrollo para entornos CRM & ERP (software a medida)"
     ],
     stack: [
             {
